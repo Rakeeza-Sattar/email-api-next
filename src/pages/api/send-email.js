@@ -12,6 +12,7 @@ export default async function handler(req, res) {
     companyName,
     phone,
     email,
+    businessID,
     businessType,
     vehicleType,
     language,
@@ -24,6 +25,7 @@ export default async function handler(req, res) {
     !companyName ||
     !phone ||
     !email ||
+    !businessID ||
     !businessType ||
     !vehicleType ||
     !language
@@ -53,6 +55,7 @@ export default async function handler(req, res) {
         Company Name: ${companyName}
         Phone: ${phone}
         Email: ${email}
+        Business ID: ${businessID}
         Business Type: ${businessType}
         Vehicle Type: ${vehicleType}
         Preferred Language: ${language}
