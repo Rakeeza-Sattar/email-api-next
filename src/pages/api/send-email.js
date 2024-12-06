@@ -32,6 +32,8 @@ export default async function handler(req, res) {
   ) {
     return res.status(400).json({ error: "All fields are required." });
   }
+  console.log("EMAIL:", process.env.EMAIL);
+  console.log("PASSWORD:", process.env.PASSWORD);
 
   // Nodemailer transporter
   const transporter = nodemailer.createTransport({
